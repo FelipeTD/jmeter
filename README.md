@@ -99,11 +99,30 @@
 - Link https://www.youtube.com/watch?v=nUu7rq1097A&list=PLUDwpEzHYYLs33uFHeIJo-6eU92IoiMZ7&index=5
 - Step 1 > Start JMeter
 - Step 2 > Create a TestPlan
+  - Contém todos os elementos do JMeter
 - Step 3 > Create a Thread Group (Users)
+  - Botão direito no Test Plan -> Add -> Thread (users) -> Thread Group
+  - Pode configurar
+    - Number of Threads (users) -> Número de usuários
+    - Ramp-up period (seconds) -> Tempo para cada requisição
+    - Loop Count -> Quantidade de vezes que vai ser executado
 - Step 4 > Add a Sampler (Http)
+  - Botão direito no users -> Add -> Sampler -> Http Request
+    - Server name or IP
+      - Endereço a ser testado sem o https://
+    - Path
+      - /
+      - Pode ser adiciona o path que deseja testar também
 - Step 5 > Add Listeners
+  - Botão direito no users -> Add -> Listener -> View Result Tree
+  - Botão direito no users -> Add -> Listener -> View Result in Table
 - Step 6 > Run Test Plan
+  - Apertar o botão verde na parte de cima do JMeter
 - Step 7 > Save Test Plan
+  - Salvar o teste num arquivo `.jmx`
+
+### Tutorial 6 - Timers in JMeter
+
 
 ### Links e referências
 - Site do JMeter
