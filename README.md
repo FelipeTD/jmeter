@@ -122,7 +122,43 @@
   - Salvar o teste num arquivo `.jmx`
 
 ### Tutorial 6 - Timers in JMeter
-
+- O que são `Timers`?
+- JMeter faz requisições sem aplicar nenhum delay entre as requisições
+- Se você realizar testes de estresse no servidor sem nenhum delay vai acontecer um `overload`
+- Então não será possível simular um cenário realista
+- JMeter `Timers` são a solução para todos esses problemas
+- `Timer` pode ser aplicado entre cada requisição entre um `Sampler`e um `Request`
+- Tipos de `Timers`
+  - Constant Timers
+  - Uniform Random Timer
+  - Gaussian Random Timer
+  - BeanShell Timer
+  - BSF Timer
+  - JSR223 Timer
+- Exemplo
+  - Botão direito em Test Plan -> Add -> Threads (users) -> Thread Group
+  - Botão direito em Thread Group -> Add -> Sampler -> Http Request
+  - Copiar e colar 2x o Http Request criado
+  - Botão direito em Thread Group -> Add -> Listener -> View Results in Table
+  - Botão direito em Thread Group -> Add -> Timer -> Constant Timer
+  - Pode ser adicionado no Http Request também
+- Exemplo Uniform Random Timer
+  - Botão direito em Thread Group -> Add -> Timer -> Uniform Random Timer
+  - Random Delay Max
+  - Constant Delay Offset
+  - Formula
+    - 0.X * Random Delay Max + Constant Delay Offset
+    - Exemplo
+    - 0.X * 100 + 0
+    - 0 e 99 ms
+- Gaussian Random Timer
+  - Define um tempo randomico para cada requisição de utilizador
+- BeanShell Timer
+  - Define um tempo para cada requisição de utilizador
+- BSF Timer
+  - Utiliza um `script` BSF para definir o tempo entre cada requisição
+- JSR223 Timer
+  - Utiliza um `script` JSR223 para definir o tempo entre cada requisição
 
 ### Links e referências
 - Site do JMeter
