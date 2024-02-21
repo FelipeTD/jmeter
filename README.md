@@ -95,7 +95,7 @@
 - Configuration
   - Configura valor padrão e variáveis para serem utilizadas pelos ‘samplers’ 
 
-### Tutorial 5 - Creating First Test In JMeter
+### Creating First Test In JMeter
 - Link https://www.youtube.com/watch?v=nUu7rq1097A&list=PLUDwpEzHYYLs33uFHeIJo-6eU92IoiMZ7&index=5
 - Step 1 > Start JMeter
 - Step 2 > Create a TestPlan
@@ -121,7 +121,7 @@
 - Step 7 > Save Test Plan
   - Salvar o teste num arquivo `.jmx`
 
-### Tutorial 6 - Timers in JMeter
+### Timers in JMeter
 - O que são `Timers`?
 - JMeter faz requisições sem aplicar nenhum delay entre as requisições
 - Se você realizar testes de estresse no servidor sem nenhum delay vai acontecer um `overload`
@@ -159,6 +159,47 @@
   - Utiliza um `script` BSF para definir o tempo entre cada requisição
 - JSR223 Timer
   - Utiliza um `script` JSR223 para definir o tempo entre cada requisição
+
+### Logic Controllers in JMeter
+- Logic Controller permite você lidar com a ordem de processamento de samplers e requests
+- Decidem quando e como será enviado uma requisição ao servidor web
+- JMeter oferece vários controladores lógicos:
+  - Critical Section Controller
+  - ForEach Controller
+  - If Controller
+  - Include Controller
+  - Interleave Controller
+  - Loop Controller
+  - Module Controller
+  - Once Only Controller
+  - Random Controller
+  - Random Order Controller
+  - Recording Controller
+  - Runtime Controller
+  - Simple Controller
+  - Switch Controller
+  - Throughput Controller
+  - Transaction Controller
+  - While Controller
+- Loop Controller
+  - Faz uma requisição ser enviada ao servidor uma quantidade de vezes ou para sempre
+  - Botão direto em Test Plan -> Add -> Threads (users) -> Thread Group
+  - Botão direito em Thread Group -> Add -> Sampler -> Http Request
+    - Criar um para index www.pavanonlinetrainings.com
+  - Copiar e colar Request
+    - Criar um para Blog www.pavantestingtools.com
+  - Copiar e colar Request
+    - Criar um para Teste 
+      - Server www.pavantestingtools.com
+      - Path /p/manual-testing-project.html
+  - Botão direito em Thread Group -> Add -> Listener -> View Results Tree
+  - Botão direito em Thread Group -> Add -> Logic Controller -> Loop Controller
+  - Arraste o Index para dentro do Loop Controller
+    - O index será executado 5 vezes
+    - Se na Thread Group você colocar para rodar 2 vezes
+    - O index será executado 5 x 2 vezes
+  - Se o Listener for colocado dentro do Loop Controler ele irá exibir somente as chamadas do Index
+  - Isso porque ele exibe somente o que está dentro do Loop Controller
 
 ### Links e referências
 - Site do JMeter
