@@ -162,7 +162,7 @@
 
 ### Logic Controllers in JMeter
 - Logic Controller permite você lidar com a ordem de processamento de samplers e requests
-- Decidem quando e como será enviado uma requisição ao servidor web
+- Decidem quando e como será enviado uma requisição ao servidor ‘web’
 - JMeter oferece vários controladores lógicos:
   - Critical Section Controller
   - ForEach Controller
@@ -200,6 +200,46 @@
     - O index será executado 5 x 2 vezes
   - Se o Listener for colocado dentro do Loop Controler ele irá exibir somente as chamadas do Index
   - Isso porque ele exibe somente o que está dentro do Loop Controller
+
+### Recording Controller in JMeter | Non Test Elements | Recording script
+- Passo 1 
+  - Adicionando NonTestElement -> Http Recording
+- Passo 2 
+  - Definir proxy no navegador
+- Passo 3 
+  - Começando o recording em um Recording Controller diferente
+- Passo 4 
+  - Começando cenário de Recording
+- Passo 5 
+  - Stop Recording and Save
+- Passo 1
+  - Add Thread Group
+  - Test Plan -> Add -> Non-Test Elements -> HTTP(s) Test Script Recorder
+  - Thread Group -> Add -> Logic Controller -> Recording Controller
+    - Renomear para LoginPage
+  - Thread Group -> Add -> Logic Controller -> Recording Controller
+    - Renomear para Registration
+- Passo 2
+  - Abrir navegador
+  - Três pontos -> Definições
+  - Sistema ≥ Abrir definições do proxy do seu computador
+  - Também pode seguir o caminho do windows -> pesquisa -> Propriedades da internet -> Conexões -> Configurações da LAN
+  - Selecionar opção
+    - Usar um servidor proxy para a rede local
+      - Endereço: localhost
+- Passo 3
+  - Target Controller deve ser LoginPage
+  - Clicar em Start
+  - Após realizar a requisição clicar em ‘stop’
+  - Não funcionou muito bem
+  - Preciso procurar outro exemplo de utilização
+- Adicionar um listener no Test Plan -> View Results Tree
+- Pelo que entendi essa opção seria para não precisa configurar os controllers
+- O Recording Controller cria todas as requisições que uma página faz para realizar a chamada
+- Então pela lógica funcionou corretamente
+- A única parte que não entendi é porque se não configurar o LAN não funciona
+
+### Simple, Module and Include Controllers | Test Fragment in JMeter
 
 ### Links e referências
 - Site do JMeter
