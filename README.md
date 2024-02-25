@@ -240,6 +240,23 @@
 - A única parte que não entendi é porque se não configurar o LAN não funciona
 
 ### Simple, Module and Include Controllers | Test Fragment in JMeter
+- Simple Controller
+  - Utilizado para agrupar os requests
+  - Login
+  - Registration
+  - Procurar um voo
+  - O Simple Controller não tem funcionalidade
+  - Ele serve somente para organizar as requisições que fazemos em grupos
+- Modular Controller
+  - Controle utilizado para executar fragmentos definidos no JMeter
+  - Por exemplo o Simple Controller
+- Test Fragment
+  - É outra opção ao Simple Controller
+  - Tem a mesma função de ser utilizado no Modular Controller
+- Include Controller
+  - Salve a requisição como um loginTF.jmx
+  - Clique com o botão direito na requisição para fazer isso
+  - Com o include controller consegue utilizar esse arquivo
 
 ### Links e referências
 - Site do JMeter
