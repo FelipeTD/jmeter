@@ -258,6 +258,12 @@
   - Clique com o botão direito na requisição para fazer isso
   - Com o include controller consegue utilizar esse arquivo
 
+### Random & Random Order Controllers in JMeter
+- Random Controller
+  - Executa um dos requests que estão dentro do Random Controller
+- Random Order Controller
+  - Executa os requests que estão dentro do Random Order Controller numa ordem aleatória 
+
 ### Links e referências
 - Site do JMeter
   - https://jmeter.apache.org/
