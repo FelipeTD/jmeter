@@ -262,7 +262,11 @@
 - Random Controller
   - Executa um dos requests que estão dentro do Random Controller
 - Random Order Controller
-  - Executa os requests que estão dentro do Random Order Controller numa ordem aleatória 
+  - Executa os requests que estão dentro do Random Order Controller numa ordem aleatória
+
+### Interleave Controller
+- Interleave Controller
+  - Trabalha da mesma forma que o Random Controller, mas não deixa repetir a opção em multiplas requisições
 
 ### Links e referências
 - Site do JMeter
