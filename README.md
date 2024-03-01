@@ -268,6 +268,18 @@
 - Interleave Controller
   - Trabalha da mesma forma que o Random Controller, mas não deixa repetir a opção em multiplas requisições
 
+### Logic Controllers- Throughput Controller | How to Build a Distributed Load Test
+- Como fazer os nossos Samplers executarem com uma porcentagem definida de execução
+- Como usar Throughput Controller para fazer isso
+- Threads (usuários virtuais) - 10
+- Web Application
+  - Home Page 20% - 2
+  - Welcome, Page 30% - 3
+  - Register Page 50% - 5
+- São colocados em um Thread Group
+- Consegue colocar as requisições dentro do Throughput Controller
+- Define a quantidade por número total de execuções ou porcentagem
+
 ### Links e referências
 - Site do JMeter
   - https://jmeter.apache.org/
