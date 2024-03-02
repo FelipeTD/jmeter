@@ -367,6 +367,14 @@
   - Micro Focus LoadRunner
   - SmartBear LoadNinja
 
+### Parameterization | CSV Dataset Config | User Defined Variables
+- JMeter internal parameters
+- Read Parameters values from CSV
+- É possível ler parametros definidos internamente no JMeter
+  - Add -> Config Element -> User defined variables
+- Também é possível definir parametros dentro de um arquivo CSV
+  - Add -> Config Element -> CSV Data Set Config
+
 ### Links e referências
 - Site do JMeter
   - https://jmeter.apache.org/
