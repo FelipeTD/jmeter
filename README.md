@@ -280,6 +280,93 @@
 - Consegue colocar as requisições dentro do Throughput Controller
 - Define a quantidade por número total de execuções ou porcentagem
 
+### Overview on Performance Testing
+- O que é teste de desempenho
+  - É um teste não funcional para se ter certeza que o programa irá funcionar corretamente
+  - O objetivo não é encontrar erros, mas evitar gargalos
+  - O foco do teste de desempenho é:
+    - Verificar a velocidade
+    - Verificar a escalabilidade
+    - Verificar a estabilidade
+  - Também é chamado de `Perf Testing`
+- Porque realizar testes de desempenho
+  - Garantir que o programa irá funcionar corretamente sem ficar lento ou instável quando vários utilizadores o utilizarem
+  - A lentidão pode deixar o programa com uma má reputação
+- Categorias de teste de desempenho
+  - Load Testing
+    - Testar se o carregamento da aplicação está rápido
+  - Stress Testing
+    - Realizar várias chamadas para entender o limite de requisições da aplicação
+  - Endurance Testing
+    - Testa se a aplicação consegue atender as requisições por um longo periodo de tempo
+  - Spike Testing
+    - Testa picos de carga nas requisições dos utilizadores
+  - Volume Testing
+    - Testar como o programa se comporta com muitos dados no banco de dados
+- Problemas comuns em teste de desempenho
+  - Long Load Time
+    - Deve manter o carregamento inicial em segundos se possível
+  - Poor Response Time
+    - A resposta as requisições dos utilizadores deve novamente ser muito rápida
+  - Poor Scalability
+    - Quando a aplicação não consegue sustentar a quantidade de utilizadores
+  - Bottlenecking
+    - CPU utilization
+    - Memory utilization
+    - Network utilization
+    - Operating System limitations
+    - Disk usage
+- Processo de teste de desempenho
+  - Identificar o ambiente de testes
+    - É importante saber a configuração que será utilizada para rodar o programa
+  - Projetar e desenhar os testes
+  - Identificar o critério de performance aceitável
+  - Configurar o ambiente de testes
+  - Implementar o ambiente de testes
+  - Executar os testes
+  - Analisar e reportar os resultados
+- Metricas e parametros monitorados
+  - Processor Usage 
+    - Tempo de utilização do processador
+  - Memory use
+    - Quantidade de memória utilizada
+  - Disk time
+    - Tempo para ler ou escrever uma requisição no disco
+  - Bandwidth
+    - Bits por segundo usados pela ‘internet’
+  - Private bytes
+    - Quantidade de ‘bytes’ alocados e não podem ser utilizados por outro processo
+    - Isso evita estouro de memória
+  - Committed memory
+    - Quantidade de memória virtual utilizada
+  - Response time
+    - Tempo de resposta de uma requisição
+  - Throughput
+    - Quantidade de requisições por segundo
+  - Amount of connection pooling
+    - A quantidade de requisições atendidas por `pool` de conexão
+    - Quanto maior a quantidade atendida melhor o resultado
+  - Maximum active sessions
+    - Quantidade máxima de sessões ativas
+  - Hit ratios
+    - Quantidade de requisições atendidas por `cache` de dados ao inves de acesso ao banco de dados
+  - Hits per second
+    - Quantidade de chamadas com exito durante 1 segundo de teste de desempenho
+  - Thread Counts
+    - Quantidade de threads rodando e ativas
+- Exemplo de teste de desempenho
+  - Tempo de resposta não pode ser superior há 4 segundos quando 1000 utilizadores acessarem o `site` ao mesmo tempo
+  - Verificar se o tempo de resposta da aplicação está aceitável quando a conexão estiver lenta
+  - Verificar o número máximo de utilizadores que a aplicação suporta antes de cair
+  - Verificar a execução do banco de dados quando 500 registros são lidos ou escritos simultaneamente
+  - Verificar a CPU e memória usados quando a aplicação está num pico de utilização
+  - Verificar o tempo de reposta quando a aplicaçãoe está com uma carga baixa, média e pesada
+- Ferramentas de teste de desempenho
+  - Apache JMeter
+  - NeoLoad
+  - Micro Focus LoadRunner
+  - SmartBear LoadNinja
+
 ### Links e referências
 - Site do JMeter
   - https://jmeter.apache.org/
