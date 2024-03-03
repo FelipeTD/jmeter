@@ -375,6 +375,21 @@
 - Também é possível definir parametros dentro de um arquivo CSV
   - Add -> Config Element -> CSV Data Set Config
 
+### Correlation 
+- O que é correlation
+  - É o processo de pegar um valor de um response e utilizar em outro request
+  - É feito em tempo de execução por isso é chamado referência dinâmica
+- Por que é requirido
+  - Nos testes as vezes é necessário pegar valores de requisições anteriores para conseguir realizar outras requisições
+  - Um exemplo é realizar o ‘login’ num sistema para conseguir realizar outras requisições
+- Como usar o Regular Expression Extractor
+  - Crie um `Test Plan` onde quer utilizar essa referência dinâmica
+  - Adicione uma `Regular Expression Extractor` no passo onde essa referência precisa ser extraída
+    - Add -> Post Processors -> Regular Expression Extractor
+  - Referencie o valor extraído no passo seguinte
+  - Execute e valide
+  - Pode usar RegExp Tester no View Results Tree para testar expressões diretamente no response data
+
 ### Links e referências
 - Site do JMeter
   - https://jmeter.apache.org/
