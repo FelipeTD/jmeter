@@ -390,8 +390,16 @@
   - Execute e valide
   - Pode usar RegExp Tester no View Results Tree para testar expressões diretamente no response data
 
+### If and While Controller
+- Para utilizar o IF desmarque a opção `Interpret condition as variable expression?`
+- No caso do While Controller pode utilizar uma variavel pré-definida
+- Ficaria com o comando abaixo:
+  - ${__groovy((vars.get('__jm__While Controller__idx') as int) < 3,)}
+
 ### Links e referências
 - Site do JMeter
   - https://jmeter.apache.org/
 - JMeter Tutorial
   - https://www.youtube.com/watch?v=817zU_bXh9Y&list=PLUDwpEzHYYLs33uFHeIJo-6eU92IoiMZ7
+- While Loop in JMeter | How to Use While Controller in JMeter
+  - https://www.youtube.com/watch?v=2uNuLuKoBn4
