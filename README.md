@@ -396,6 +396,16 @@
 - Ficaria com o comando abaixo:
   - ${__groovy((vars.get('__jm__While Controller__idx') as int) < 3,)}
 
+### Switch Controller e Transaction Controller
+- Baseado no switch case
+  - Percorre uma lista de condições e se nenhuma atender executa o padrão
+- Foi utilizado um BeanShell Sampler para criar as condições
+- O Http Request é executado dentro de um Transaction Controller
+- Os países estão dentro de um arquivo Nations.txt
+- A Thread é executada 11 vezes pegando os 11 países
+- O BeanShell Sampler define qual o valor que será utilizado no switch
+- O Switch pega o valor definido e chama a URL do valor
+
 ### Links e referências
 - Site do JMeter
   - https://jmeter.apache.org/
@@ -403,3 +413,5 @@
   - https://www.youtube.com/watch?v=817zU_bXh9Y&list=PLUDwpEzHYYLs33uFHeIJo-6eU92IoiMZ7
 - While Loop in JMeter | How to Use While Controller in JMeter
   - https://www.youtube.com/watch?v=2uNuLuKoBn4
+- Switch Controller in Jmeter
+  - https://www.youtube.com/watch?v=ZYeS1nOcK6U
