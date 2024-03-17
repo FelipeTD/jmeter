@@ -427,6 +427,18 @@
 - Define a quantidade de tempo que uma requisição será feita
 - O Http Request que você colocar dentro do Runtime Controller será feita requisições até acabar o tempo definido
 
+## Observações
+- Esse projeto possui somente a explicação sobre conceitos básicos do JMeter
+- Para utilizar esses conceitos pode aplicá-los em 5 testes no JMeter:
+  - Load Testing
+  - Stress Testing
+  - Endurance Testing
+  - Spike Testing
+  - Volume Testing
+- Depois que o estudo dos conceitos básicos forem concluídos é interessante aprender a aplicar o JMeter
+  - O JMeter pode ser aplicado em `pipelines CI/CD` para teste de desempenho
+  - Também podem ser aplicados restrições de deploy com sucesso de acordo com resultados dos testes no JMeter
+
 ### Links e referências
 - Site do JMeter
   - https://jmeter.apache.org/
