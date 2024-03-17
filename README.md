@@ -412,6 +412,10 @@
 - No ForEach utilizamos o resultado da expressão regular e mostramos o nome de cada cidade
 - Também foi mostrado o indice de cada posição da lista de cidades
 
+### Once Only Controller
+- Utilizado para executar somente uma vez
+- Pode ser usado no momento do ‘login’ para pegar o token de acesso necessário para chamar as outras funções do sistema
+
 ### Links e referências
 - Site do JMeter
   - https://jmeter.apache.org/
@@ -423,3 +427,5 @@
   - https://www.youtube.com/watch?v=ZYeS1nOcK6U
 - How to use for each controller in JMeter - JMeter Logic Controllers
   - https://www.youtube.com/watch?v=tQQ9KSM7xYw
+- JMeter Performance Testing Tutorial 25 - Simple and Once Controller with example in JMeter
+  - https://www.youtube.com/watch?v=jCzX2xgsdoc
