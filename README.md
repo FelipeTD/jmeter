@@ -416,6 +416,13 @@
 - Utilizado para executar somente uma vez
 - Pode ser usado no momento do ‘login’ para pegar o token de acesso necessário para chamar as outras funções do sistema
 
+### Critical Section Controller
+- Utilizado quando quer que as requisições sejam feitas uma por uma
+- As threads no JMeter são executadas ao mesmo tempo
+- Ao usar o Critical Section Controller elas serão executadas uma por vez
+- Lembrando que precisa configurar 5 utilizadores para serem executados um por vez
+- Se colocar para a thread se repetir 5 vezes o Critical Section Controller não faz sentido
+
 ### Links e referências
 - Site do JMeter
   - https://jmeter.apache.org/
@@ -429,3 +436,5 @@
   - https://www.youtube.com/watch?v=tQQ9KSM7xYw
 - JMeter Performance Testing Tutorial 25 - Simple and Once Controller with example in JMeter
   - https://www.youtube.com/watch?v=jCzX2xgsdoc
+- JMeter 2.12 - Critical Section Controller
+  - https://www.youtube.com/watch?v=HVVyTvoTmdc
