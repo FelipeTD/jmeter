@@ -406,6 +406,12 @@
 - O BeanShell Sampler define qual o valor que será utilizado no switch
 - O Switch pega o valor definido e chama a URL do valor
 
+### For Each Controller
+- A requisição Inicial retorna uma lista de opções
+- Criamos uma expressão regular para pegar os nomes das cidades da lista retornada
+- No ForEach utilizamos o resultado da expressão regular e mostramos o nome de cada cidade
+- Também foi mostrado o indice de cada posição da lista de cidades
+
 ### Links e referências
 - Site do JMeter
   - https://jmeter.apache.org/
@@ -415,3 +421,5 @@
   - https://www.youtube.com/watch?v=2uNuLuKoBn4
 - Switch Controller in Jmeter
   - https://www.youtube.com/watch?v=ZYeS1nOcK6U
+- How to use for each controller in JMeter - JMeter Logic Controllers
+  - https://www.youtube.com/watch?v=tQQ9KSM7xYw
