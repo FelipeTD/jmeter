@@ -423,6 +423,10 @@
 - Lembrando que precisa configurar 5 utilizadores para serem executados um por vez
 - Se colocar para a thread se repetir 5 vezes o Critical Section Controller não faz sentido
 
+### Runtime Controller
+- Define a quantidade de tempo que uma requisição será feita
+- O Http Request que você colocar dentro do Runtime Controller será feita requisições até acabar o tempo definido
+
 ### Links e referências
 - Site do JMeter
   - https://jmeter.apache.org/
