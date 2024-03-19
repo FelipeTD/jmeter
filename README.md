@@ -439,6 +439,11 @@
   - O JMeter pode ser aplicado em `pipelines CI/CD` para teste de desempenho
   - Também podem ser aplicados restrições de deploy com sucesso de acordo com resultados dos testes no JMeter
 
+### Teste de Desempenho e carregamento (Load Testing and API Performance)
+- Foi utilizado o projeto `spring-boot-crud-example` para realizar os testes
+- O teste de desempenho está no arquivo `SBCPT.jmx` contendo a chamada para os 4 endpoints CRUD do projeto
+- Todas as requisições foram feitas com menos de 100ms
+
 ### Links e referências
 - Site do JMeter
   - https://jmeter.apache.org/
@@ -454,3 +459,5 @@
   - https://www.youtube.com/watch?v=jCzX2xgsdoc
 - JMeter 2.12 - Critical Section Controller
   - https://www.youtube.com/watch?v=HVVyTvoTmdc
+- JMeter API Testing | Spring Boot Rest API Performance & Load Testing using JMeter | JavaTechie
+  - https://www.youtube.com/watch?v=eqZORQpOuZA
